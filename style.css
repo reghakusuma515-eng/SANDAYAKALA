@@ -1010,7 +1010,8 @@
       position: absolute;
       inset: 0;
       opacity: .06;
-      background-image: repeating-conic-gradient(var (--emas) 0deg, transparent 1deg 45deg),
+      z-index: 0;
+      background-image: repeating-conic-gradient(var(--emas) 0deg, transparent 1deg 45deg),
         repeating-conic-gradient(var(--emas) 0deg, transparent 1deg 45deg);
       background-size: 60px 60px;
       background-position: 0 0, 30px 30px;
@@ -1040,6 +1041,10 @@
       position: relative;
       z-index: 1;
     }
+
+    .cta-final .hero-cta {
+      position: relative;
+      z-index: 1;
 
     /* FOOTER */
     footer {
